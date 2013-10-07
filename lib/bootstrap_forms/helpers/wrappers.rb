@@ -75,7 +75,7 @@ module BootstrapForms
           return ''.html_safe
         else
           label_options = {}
-          label_options[:class] = 'form-label' unless @field_options[:control_group] == false
+          label_options[:class] = 'control-label' unless @field_options[:control_group] == false
           if respond_to?(:object)
              label(@name, block_given? ? block : @field_options[:label], label_options)
            else
